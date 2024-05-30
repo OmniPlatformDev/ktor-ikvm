@@ -1,0 +1,699 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ktor-with-ikvm/1.0.0": {
+        "dependencies": {
+          "IKVM": "8.8.0",
+          "MyAssembly": "3.2.1.0"
+        },
+        "runtime": {
+          "ktor-with-ikvm.dll": {}
+        }
+      },
+      "IKVM/8.8.0": {
+        "dependencies": {
+          "IKVM.Image": "8.8.0",
+          "IKVM.MSBuild": "8.8.0",
+          "Microsoft.Extensions.DependencyModel": "6.0.0",
+          "Microsoft.Win32.Registry": "5.0.0",
+          "Mono.Posix": "7.1.0-final.1.21458.1",
+          "Mono.Unix": "7.1.0-final.1.21458.1",
+          "System.Data.Odbc": "6.0.0",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/IKVM.ByteCode.dll": {
+            "assemblyVersion": "8.8.0.0",
+            "fileVersion": "8.8.0.60000"
+          },
+          "lib/net6.0/IKVM.Java.dll": {
+            "assemblyVersion": "8.8.0.0",
+            "fileVersion": "8.8.0.60000"
+          },
+          "lib/net6.0/IKVM.Runtime.dll": {
+            "assemblyVersion": "8.8.0.0",
+            "fileVersion": "8.8.0.60000"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libikvm.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libikvm.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-arm/native/libikvm.so": {
+            "rid": "linux-musl-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-arm64/native/libikvm.so": {
+            "rid": "linux-musl-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/libikvm.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libikvm.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libikvm.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libikvm.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm64/native/ikvm.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/ikvm.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/ikvm.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "IKVM.Image/8.8.0": {
+        "dependencies": {
+          "IKVM.Image.runtime.linux-arm": "8.8.0",
+          "IKVM.Image.runtime.linux-arm64": "8.8.0",
+          "IKVM.Image.runtime.linux-musl-arm": "8.8.0",
+          "IKVM.Image.runtime.linux-musl-arm64": "8.8.0",
+          "IKVM.Image.runtime.linux-musl-x64": "8.8.0",
+          "IKVM.Image.runtime.linux-x64": "8.8.0",
+          "IKVM.Image.runtime.osx-arm64": "8.8.0",
+          "IKVM.Image.runtime.osx-x64": "8.8.0",
+          "IKVM.Image.runtime.win-arm64": "8.8.0",
+          "IKVM.Image.runtime.win-x64": "8.8.0",
+          "IKVM.Image.runtime.win-x86": "8.8.0"
+        }
+      },
+      "IKVM.Image.runtime.linux-arm/8.8.0": {},
+      "IKVM.Image.runtime.linux-arm64/8.8.0": {},
+      "IKVM.Image.runtime.linux-musl-arm/8.8.0": {},
+      "IKVM.Image.runtime.linux-musl-arm64/8.8.0": {},
+      "IKVM.Image.runtime.linux-musl-x64/8.8.0": {},
+      "IKVM.Image.runtime.linux-x64/8.8.0": {},
+      "IKVM.Image.runtime.osx-arm64/8.8.0": {},
+      "IKVM.Image.runtime.osx-x64/8.8.0": {},
+      "IKVM.Image.runtime.win-arm64/8.8.0": {},
+      "IKVM.Image.runtime.win-x64/8.8.0": {},
+      "IKVM.Image.runtime.win-x86/8.8.0": {},
+      "IKVM.MSBuild/8.8.0": {
+        "dependencies": {
+          "IKVM.MSBuild.Tools": "8.8.0"
+        }
+      },
+      "IKVM.MSBuild.Tools/8.8.0": {
+        "dependencies": {
+          "IKVM.MSBuild.Tools.runtime.linux-arm": "8.8.0",
+          "IKVM.MSBuild.Tools.runtime.linux-arm64": "8.8.0",
+          "IKVM.MSBuild.Tools.runtime.linux-x64": "8.8.0",
+          "IKVM.MSBuild.Tools.runtime.osx-arm64": "8.8.0",
+          "IKVM.MSBuild.Tools.runtime.osx-x64": "8.8.0",
+          "IKVM.MSBuild.Tools.runtime.win-arm64": "8.8.0",
+          "IKVM.MSBuild.Tools.runtime.win-x64": "8.8.0"
+        }
+      },
+      "IKVM.MSBuild.Tools.runtime.linux-arm/8.8.0": {},
+      "IKVM.MSBuild.Tools.runtime.linux-arm64/8.8.0": {},
+      "IKVM.MSBuild.Tools.runtime.linux-x64/8.8.0": {},
+      "IKVM.MSBuild.Tools.runtime.osx-arm64/8.8.0": {},
+      "IKVM.MSBuild.Tools.runtime.osx-x64/8.8.0": {},
+      "IKVM.MSBuild.Tools.runtime.win-arm64/8.8.0": {},
+      "IKVM.MSBuild.Tools.runtime.win-x64/8.8.0": {},
+      "Microsoft.Extensions.DependencyModel/6.0.0": {
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Text.Json": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Microsoft.Win32.Registry/5.0.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Mono.Posix/7.1.0-final.1.21458.1": {
+        "dependencies": {
+          "Mono.Unix": "7.1.0-final.1.21458.1"
+        },
+        "runtime": {
+          "lib/net6.0/Mono.Posix.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.100.21.45801"
+          }
+        }
+      },
+      "Mono.Unix/7.1.0-final.1.21458.1": {
+        "runtime": {
+          "lib/net6.0/Mono.Unix.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.100.21.45801"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libMono.Unix.so": {
+            "rid": "android-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-arm64/native/libMono.Unix.so": {
+            "rid": "android-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-x64/native/libMono.Unix.so": {
+            "rid": "android-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-x86/native/libMono.Unix.so": {
+            "rid": "android-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-arm/native/libMono.Unix.a": {
+            "rid": "ios-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-arm64/native/libMono.Unix.a": {
+            "rid": "ios-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-armv7s/native/libMono.Unix.a": {
+            "rid": "ios-armv7s",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/iossimulator-arm64/native/libMono.Unix.a": {
+            "rid": "iossimulator-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/iossimulator-x64/native/libMono.Unix.a": {
+            "rid": "iossimulator-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm/native/libMono.Unix.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libMono.Unix.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libMono.Unix.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/maccatalyst-arm64/native/libMono.Unix.a": {
+            "rid": "maccatalyst-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/maccatalyst-x64/native/libMono.Unix.a": {
+            "rid": "maccatalyst-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libMono.Unix.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libMono.Unix.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvos-arm64/native/libMono.Unix.a": {
+            "rid": "tvos-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tvossimulator-x64/native/libMono.Unix.a": {
+            "rid": "tvossimulator-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {},
+      "System.Data.Odbc/6.0.0": {
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Data.Odbc.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/freebsd/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "freebsd",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/illumos/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "illumos",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/ios/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "ios",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/linux/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/osx/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/solaris/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "solaris",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/tvos/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "tvos",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/win/lib/net6.0/System.Data.Odbc.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "System.Drawing.Common/6.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Security.AccessControl/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {},
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Text.Json/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
+        }
+      },
+      "MyAssembly/3.2.1.0": {
+        "runtime": {
+          "MyAssembly.dll": {
+            "assemblyVersion": "3.2.1.0",
+            "fileVersion": "3.2.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ktor-with-ikvm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IKVM/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HRtF/xLeptxdvSgUG08pDYn2xuxpF/kcU4njsWshS9eTZfqTW+Y1rBA5uYIFK8ccVf0fZ3PDvD0CIcLUBl2g6A==",
+      "path": "ikvm/8.8.0",
+      "hashPath": "ikvm.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LHhPbFI5SGzMW5SMWzfiZo7uK521iaN+T/4KaMSih5IQHA5dgOunT9AgarM4zxvIwOKJxBdZheK7H5WeTwaAbw==",
+      "path": "ikvm.image/8.8.0",
+      "hashPath": "ikvm.image.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.linux-arm/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xh6qlbPiJDwCQA+zl9Bmb8BySiz68w+uslF+voG6sCpzOnCnihqMqrjwzOFFy1HiXVXVOaFILCpJR7SrscA79Q==",
+      "path": "ikvm.image.runtime.linux-arm/8.8.0",
+      "hashPath": "ikvm.image.runtime.linux-arm.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.linux-arm64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P1nl/prQptaUhk7Mr9iXzqZraic+pOdGonzJyHDTB8lwajFV/L4j4GNC3QPLeCupMZgjp+dplnykrqPSjR0dgw==",
+      "path": "ikvm.image.runtime.linux-arm64/8.8.0",
+      "hashPath": "ikvm.image.runtime.linux-arm64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.linux-musl-arm/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ayBzwNp6/ySoFPG0Ad/joCiQDbb7s6GmubGX0bx8AVjwQeSD1as8hAHbFkJ1SWJx+X6AwNc+9eS6QX5yRNktXw==",
+      "path": "ikvm.image.runtime.linux-musl-arm/8.8.0",
+      "hashPath": "ikvm.image.runtime.linux-musl-arm.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.linux-musl-arm64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TrIYcQc2EPBIBKq6We7vzCWwecd2Dz/RVroQTXwNd2hVRx/O+bHpur2OPjnrBNA6TrIi2NTUKCoHmG0c6Lu0EA==",
+      "path": "ikvm.image.runtime.linux-musl-arm64/8.8.0",
+      "hashPath": "ikvm.image.runtime.linux-musl-arm64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.linux-musl-x64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iqAlNKTELLqcxn8aIaYWYyV1vimbEA94N1MlWbGVvwa1oG1yQds5IohhE05PXD15cS6mHgjHWnwgxDTOVR/n9g==",
+      "path": "ikvm.image.runtime.linux-musl-x64/8.8.0",
+      "hashPath": "ikvm.image.runtime.linux-musl-x64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.linux-x64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wBHZVo/PwCf4NOOH9/15l19/bIvLRwy96w4EmWNB7nBBTPttPfkyCwNQ2IBrH2ohn3QOPLNtjAXj43LH0bUXQA==",
+      "path": "ikvm.image.runtime.linux-x64/8.8.0",
+      "hashPath": "ikvm.image.runtime.linux-x64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.osx-arm64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SoMjFclEwqwgsrVWqWFQ/25A06SlUv5jUT+CkF1n61BM1UA8JFhoXSrXTkc+R2aGikoDwhGnKkQAaYoUtRsiRg==",
+      "path": "ikvm.image.runtime.osx-arm64/8.8.0",
+      "hashPath": "ikvm.image.runtime.osx-arm64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.osx-x64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5F1vPI9yQiR7lPjr7/Fn8jPdWvt3qZ1O7SoR2nKMZxnoTWioDRzVJnuwbx/n3oPu4x9J5+3KhOx1xdzkRg115w==",
+      "path": "ikvm.image.runtime.osx-x64/8.8.0",
+      "hashPath": "ikvm.image.runtime.osx-x64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.win-arm64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E//6ap90mDLWt/0Dpd+u3pHPGitF2XGefPA333rX3O0emq8sVon3ZIWMYTk21uRwMivR9EMKpiPd7jF/T22LsA==",
+      "path": "ikvm.image.runtime.win-arm64/8.8.0",
+      "hashPath": "ikvm.image.runtime.win-arm64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.win-x64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e9MVCB6RuNCHLQNdDwWzF5dfBYz62XMgJTI8HqZdxY4Lx+z2I5iIKNbspkz7OvPeAwaZIGB7nLuioMI1WAsxjg==",
+      "path": "ikvm.image.runtime.win-x64/8.8.0",
+      "hashPath": "ikvm.image.runtime.win-x64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.Image.runtime.win-x86/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sxJgweKdX7ckGOJwvj4PQH8ofpgBjIHdyFo4rQeT7k1CQoVIsLyVFInqXUPutIVTkcT5dl8Qvo8ZTSlyLXCNuw==",
+      "path": "ikvm.image.runtime.win-x86/8.8.0",
+      "hashPath": "ikvm.image.runtime.win-x86.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-28E4loLMZlZvnGt/VzZQWIAqrzxGKinaQdTSJ2yN2XnQ1N/QZHzQNmUQQT4qoRgL72Ng5Qk9JISrBBlv/ey0mg==",
+      "path": "ikvm.msbuild/8.8.0",
+      "hashPath": "ikvm.msbuild.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kDO8FB1xtSCtDUF87WMxf1upLFDGS9a66X2qUtp8iGMPxi8V5VfIw1i5aKCLDQBlHtmiikx8WthghCdWVvrpww==",
+      "path": "ikvm.msbuild.tools/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools.runtime.linux-arm/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RaSc7aLJ05i1ad+/RJQDrNErGPjDOSFpNduX78Z21XOu4+qMTp0yh7QOFZ3uVLMgXT619btqb/2VK2MRiCN2Dw==",
+      "path": "ikvm.msbuild.tools.runtime.linux-arm/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.runtime.linux-arm.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools.runtime.linux-arm64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E5SswJK66POSnU849j23QeJVGLgRDvQyPcau7G8ON857HRwBpHUJk5zuptb0BjiwyWneKH99RgB832RpT8I6ew==",
+      "path": "ikvm.msbuild.tools.runtime.linux-arm64/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.runtime.linux-arm64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools.runtime.linux-x64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ekYPoxEf8PqnPZB1um1532LQ5Uck0ZDCapJMjjLpOiYTD830M04UgrBfScNvNm4qqPBMPfUIDfPkeWM4JKT/wA==",
+      "path": "ikvm.msbuild.tools.runtime.linux-x64/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.runtime.linux-x64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools.runtime.osx-arm64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCFr2r5JND3wLpFIokhMx4cXDIXseHA5ru0+Fq8Jnl+lTMQB1etdBK9ucVVE1shIlBmusZAKts4cw7Xo6pz/VQ==",
+      "path": "ikvm.msbuild.tools.runtime.osx-arm64/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.runtime.osx-arm64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools.runtime.osx-x64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g4baNuRpEoFguSNdQFWCQ/ytYWROpZC502DwpI8y+M34jgy8yZfLpyqj6aSAeuY7qmZVLdzW0K+8/100dTxzjA==",
+      "path": "ikvm.msbuild.tools.runtime.osx-x64/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.runtime.osx-x64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools.runtime.win-arm64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AHrmfN9HUvlmFH2jtAQ2lfle2dovqAqWfsZtntO3qG9wjVwxXqk/EdjSMxzbGAjR9yiLwp2pqeLTAN5HazdeGQ==",
+      "path": "ikvm.msbuild.tools.runtime.win-arm64/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.runtime.win-arm64.8.8.0.nupkg.sha512"
+    },
+    "IKVM.MSBuild.Tools.runtime.win-x64/8.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r54jmMIPcAI52gpezvq6zIzBwpMyQ8KrSPjjMrdRCfJCq/O5PtULylSXyXKajMciuUvj15hLHSY4apvCAhqHWw==",
+      "path": "ikvm.msbuild.tools.runtime.win-x64/8.8.0",
+      "hashPath": "ikvm.msbuild.tools.runtime.win-x64.8.8.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyModel/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TD5QHg98m3+QhgEV1YVoNMl5KtBw/4rjfxLHO0e/YV9bPUBDKntApP4xdrVtGgCeQZHVfC2EXIGsdpRNrr87Pg==",
+      "path": "microsoft.extensions.dependencymodel/6.0.0",
+      "hashPath": "microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
+      "path": "microsoft.win32.registry/5.0.0",
+      "hashPath": "microsoft.win32.registry.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+      "path": "microsoft.win32.systemevents/6.0.0",
+      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "Mono.Posix/7.1.0-final.1.21458.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xhil/0zRkA2MrkyMZXC3dPSDWOhq6YD0vYGl1VnBbjsEZfLQCu7+mJZ/ftnOd0r4qmeHVeNuW6Pt33NoxO671A==",
+      "path": "mono.posix/7.1.0-final.1.21458.1",
+      "hashPath": "mono.posix.7.1.0-final.1.21458.1.nupkg.sha512"
+    },
+    "Mono.Unix/7.1.0-final.1.21458.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rhxz4A7By8Q0wEgDqR+mioDsYXGrcYMYPiWE9bSaUKMpG8yAGArhetEQV5Ms6KhKCLdQTlPYLBKPZYoKbAvT/g==",
+      "path": "mono.unix/7.1.0-final.1.21458.1",
+      "hashPath": "mono.unix.7.1.0-final.1.21458.1.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.Data.Odbc/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pnZjwe0Qwr1Rnp7NExd5zz4YwXJrYuAbWNKjEQpTzCEg6f/L5DYJS7w3hG3vgSj1t/r79UL390YzXIklf1VuQQ==",
+      "path": "system.data.odbc/6.0.0",
+      "hashPath": "system.data.odbc.6.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+      "path": "system.drawing.common/6.0.0",
+      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "path": "system.security.accesscontrol/5.0.0",
+      "hashPath": "system.security.accesscontrol.5.0.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "path": "system.security.principal.windows/5.0.0",
+      "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "path": "system.text.encodings.web/6.0.0",
+      "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zaJsHfESQvJ11vbXnNlkrR46IaMULk/gHxYsJphzSF+07kTjPHv+Oc14w6QEOfo3Q4hqLJgStUaYB9DBl0TmWg==",
+      "path": "system.text.json/6.0.0",
+      "hashPath": "system.text.json.6.0.0.nupkg.sha512"
+    },
+    "MyAssembly/3.2.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

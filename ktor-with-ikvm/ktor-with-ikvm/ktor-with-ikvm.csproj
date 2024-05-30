@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>ktor_with_ikvm</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="IKVM" Version="8.8.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <IkvmReference Include="./di-kodein-all.jar">
+            <AssemblyName>MyAssembly</AssemblyName>
+            <AssemblyVersion>3.2.1.0</AssemblyVersion>
+            <Debug>portable</Debug>
+        </IkvmReference>
+    </ItemGroup>
+
+</Project>
